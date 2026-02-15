@@ -7,7 +7,7 @@ services:
     branch: main
     plan: free
     rootDir: backend
-    buildCommand: chmod +x render_build.sh && ./render_build.sh
+    buildCommand: sed -i 's/\r$//' render_build.sh && chmod +x render_build.sh && ./render_build.sh
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port 10000
 
 
