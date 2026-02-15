@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Premium SaaS Palette */
+  --primary: #4f46e5;
+  /* Refined Indigo - Professional & Trustworthy */
+  --primary-hover: #4338ca;
+  --primary-light: #eef2ff;
+
+  --text-main: #0f172a;
+  /* Slate 900 - Sharp, high contrast */
+  --text-secondary: #475569;
+  /* Slate 600 - Muted but readable */
+  --text-tertiary: #94a3b8;
+  /* Slate 400 - Subtle details */
+
+  --bg-body: #f8fafc;
+  /* Cool Light Gray - Breathable */
+  --bg-card: #ffffff;
+  /* Pure White */
+
+  --border-subtle: #e2e8f0;
+  /* Very light border */
+
+  /* Shadows - The "Floating" Effect */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Layout */
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+/* Background - Clean & Calm */
+.bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: var(--bg-body);
+}
+
+/* Typography Hierarchy */
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-main);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  /* Tighter tracking for modern headlines */
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+/* Scrollbar - Minimal */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
